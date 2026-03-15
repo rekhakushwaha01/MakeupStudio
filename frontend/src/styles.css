@@ -1,0 +1,144 @@
+:root {
+  --pink: #ff4f9a;
+  --soft-pink: #ffe7f1;
+  --light-pink: #fff5fb;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--light-pink);
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink);
+}
+
+.bg-soft-pink {
+  background-color: var(--soft-pink);
+}
+
+.text-pink {
+  color: var(--pink) !important;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+
+.btn-pink:hover {
+  background-color: #ff2f88;
+  border-color: #ff2f88;
+  color: #fff;
+}
+
+.btn-outline-pink {
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+.btn-outline-pink:hover {
+  background-color: var(--pink);
+  color: #fff;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ffe7f1 0%, #ffffff 50%, #ffe7f1 100%);
+}
+
+.hero-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hero-image {
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.feature-icon-card {
+  background-color: #fff;
+  border: 1px solid #f3d6e4;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: var(--soft-pink);
+}
+
+.category-card {
+  position: relative;
+  min-height: 140px;
+  background-image: linear-gradient(135deg, #ff7fb8, #ff4f9a);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1.25rem;
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.45), transparent 55%);
+  pointer-events: none;
+}
+
+.category-card > * {
+  position: relative;
+}
+
+.product-card .ratio {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.pricing-card {
+  border-radius: 1.25rem;
+}
+
+.bg-pink-badge {
+  background-color: var(--soft-pink);
+  color: var(--pink);
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.cart-toast {
+  z-index: 1080;
+}
+
+.cart-img-placeholder {
+  width: 64px;
+  height: 64px;
+}
+
+.service-gallery-preview {
+  height: 260px;
+}
+
+.service-gallery-thumb {
+  border: none;
+  background: var(--soft-pink);
+  padding: 0.5rem;
+}
+
+.service-gallery-thumb.active {
+  outline: 2px solid var(--pink);
+  color: var(--pink);
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    text-align: center;
+  }
+}
+
